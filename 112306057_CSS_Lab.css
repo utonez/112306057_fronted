@@ -1,0 +1,95 @@
+/* Global styles for all media types */
+body {
+    color: white; /* Change text color */
+    background-color: deepskyblue; /* Change background color */
+}
+
+/* Styles for screen display */
+@media all {
+    header{background-color: deepskyblue;}
+    body {
+        background-color: white; /* 新增導覽欄以下的背景顏色 */
+    }
+    nav {margin-top: -17px}
+    h1 {
+        color: white; 
+        text-align: center;
+    }
+    p{text-align: center;
+      font-family: bold}
+    footer p{color:black;
+             text-align: left;}
+
+    .navbar {
+        background-color: darkblue; /* Change background color for the navbar */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: deeppink;
+        color: pink;
+        font-family: bold;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:darkblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        color: deepskyblue;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Styles for print media */
+@media print {
+    body {
+        color: black; /* Change text color for print media */
+        background-color: white; /* Change background color for print media */
+    }
+}
